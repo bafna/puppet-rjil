@@ -115,6 +115,14 @@ class rjil::ceph (
     group => 'root'
   }
 
+  ## File for logrotate postrotate
+  file { '/usr/local/bin/dump-logs.py':
+    source => 'puppet:///modules/rjil/dump-logs.py',
+    mode => '0755',
+    owner => 'root',
+    group => 'root'
+  }
+
   rjil::jiocloud::logrotate{'ceph':
     logfile       => '/var/log/ceph/*log',
     postrotate    => '/usr/local/bin/ceph-postrotate.sh',

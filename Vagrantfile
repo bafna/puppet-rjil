@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
   map = ENV['map'] || environment
 
   config.vm.provider :virtualbox do |vb, override|
-    vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+    #vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
   end
 
