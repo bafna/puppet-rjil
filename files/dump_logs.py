@@ -9,7 +9,7 @@ import socket
 from key import *
 import datetime
 from datetime import date, timedelta
-date_before=(datetime.date.today() - timedelta(30)).strftime("%Y%m%d")
+date_before=(datetime.date.today() - timedelta(1)).strftime("%Y%m%d")
 file_pattern = '/var/log/ceph/'+'*'+date_before+'.gz'
 listing = glob.glob(file_pattern)
 
