@@ -87,7 +87,7 @@ mod 'puppetlabs/concat',
 
 mod 'enovance/ceph',
   :git => "#{base_url}/bafna/puppet-ceph",
-  :ref => 'svn_to_git_2'
+  :ref => 'staging'
 
 mod 'stackforge/glance',
   :git => "#{base_url}/stackforge/puppet-glance",

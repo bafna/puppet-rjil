@@ -75,8 +75,8 @@ rjil::jiocloud::dns::entries:
 ######## Openstack configs #########
 ####################################
 
-keystone_public_address: identity.jiocloud.com
-keystone_private_address: identity.jiocloud.com
+keystone_public_address: iam.staging.jiocloudservices.com
+keystone_private_address: iam.staging.jiocloudservices.com
 
 nova_public_address: compute.jiocloud.com
 nova_internal_address: compute.jiocloud.com

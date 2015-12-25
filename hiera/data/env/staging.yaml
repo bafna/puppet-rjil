@@ -5,14 +5,14 @@ public_interface: "%{interface_10_140_214_0_23}"
 private_address: "%{ipaddress_10_140_214_0_23}"
 private_interface: "%{interface_10_140_214_0_23}"
 
-keystone_public_address: "dss-dev-test.jiocloud.com"
-keystone_private_address: "dss-dev-test.jiocloud.com"
+keystone_public_address: "iam.staging.jiocloudservices.com"
+keystone_private_address: "iam.staging.jiocloudservices.com"
 radosgw_public_address: "dss-dev-test.jiocloud.com"
 radosgw_internal_address: "dss-dev-test.jiocloud.com"
 
 rjil::system::proxies:
   "no":
-    url: "127.0.0.1,localhost,consul,jiocloudcom"
+    url: "127.0.0.1,localhost,consul"
   http:
     url: "http://10.140.218.59:3128/"
   https:
